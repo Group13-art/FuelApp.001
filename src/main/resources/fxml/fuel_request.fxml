@@ -6,9 +6,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
+<GridPane fx:controller="fuelapp.controllers.FuelRequestController"
+          xmlns:fx="http://javafx.com/fxml" alignment="CENTER" hgap="10" vgap="10">
+    <Label text="Select Car:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <ComboBox fx:id="carComboBox" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
 
-</AnchorPane>
+    <Label text="Fuel Price (R/litre):" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <Label fx:id="fuelPriceLabel" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+    <Button text="Request Fuel Quote" onAction="#handleRequest" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+</GridPane>
+
