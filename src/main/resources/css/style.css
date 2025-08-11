@@ -1,6 +1,9 @@
 .root {
     -fx-font-family: "Segoe UI";
-    -fx-background-color: #f4f4f4;
+     -fx-background-image: url("src/main/resources/pump.jpg");
+        -fx-background-size: cover;
+        -fx-background-repeat: no-repeat;
+        -fx-background-position: center center;
 }
 
 .label {
