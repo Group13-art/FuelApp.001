@@ -15,7 +15,7 @@ public class ForgotPasswordController {
         String email = emailField.getText();
         String newPassword = newPasswordField.getText();
         System.out.println("Password reset for " + email + " to: " + newPassword);
-        // Add logic to update password in storage
+        //  logic to update password in storage
     }
 }
 

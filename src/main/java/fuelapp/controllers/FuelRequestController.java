@@ -57,7 +57,7 @@ public class FuelRequestController {
             // Parse the JSON file into a JsonNode
             JsonNode rootNode = mapper.readTree(file);
 
-            // Get the value of "petrol" and set it to the label
+            // Getting the value of "petrol" and setting it to the label
             String petrolPrice = rootNode.get("petrol").asText();
             fuelPriceLabel.setText(petrolPrice);
         } catch (Exception e) {
